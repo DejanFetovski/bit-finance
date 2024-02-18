@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 
-import { Disclosure, Menu, Transition, Dialog } from '@headlessui/react'
+import { Transition, Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
