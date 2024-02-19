@@ -19,20 +19,20 @@ import {
   // Image,
 } from '@nextui-org/react'
 
-import { getPoints } from 'services/users'
+// import { getPoints } from 'services/users'
 
-type Point = {
-  rank: number
-  address: string
-  totalPts: number
-  ptsPerDay: number
-  referralPts: number
-  bonusPts: number
-}
+// type Point = {
+//   rank: number
+//   address: string
+//   totalPts: number
+//   ptsPerDay: number
+//   referralPts: number
+//   bonusPts: number
+// }
 
 /** import constant points data for test */
-// import { pointsData } from 'constants/points.data'
-// type Point = (typeof pointsData.points)[0]
+import { pointsData } from 'constants/points.data'
+type Point = (typeof pointsData.points)[0]
 
 const columns = [
   { name: 'Rank', uid: 'rank', sortable: false },
@@ -48,13 +48,13 @@ export function Points() {
   const [points, setPoints] = useState<Point[]>([])
 
   useEffect(() => {
-    getPoints().then((initialData: { updateDate: Date; points: Point[] }) => {
-      setUpdateDate(initialData.updateDate)
-      setPoints(initialData.points)
-    })
+    // getPoints().then((initialData: { updateDate: Date; points: Point[] }) => {
+    //   setUpdateDate(initialData.updateDate)
+    //   setPoints(initialData.points)
+    // })
     /** constant data for test */
-    // setUpdateDate(pointsData.updateDate)
-    // setPoints(pointsData.points)
+    setUpdateDate(pointsData.updateDate)
+    setPoints(pointsData.points)
   }, [])
 
   const renderCell = useCallback((point: Point, columnKey: Key) => {

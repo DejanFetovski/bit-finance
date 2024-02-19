@@ -1,7 +1,7 @@
 import { ConnectButton } from '@mysten/dapp-kit'
 import { useCurrentAccount } from '@mysten/dapp-kit'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import {
   Navbar,
   NavbarBrand,
@@ -15,21 +15,21 @@ import {
 } from '@nextui-org/react'
 
 import Logo from 'assets/svg/logo-navbar.svg?react'
-import { getUserInfo } from 'services/users'
+// import { getUserInfo } from 'services/users'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [point, setPoint] = useState<number>()
+  // const [point, setPoint] = useState<number>()
 
   const account = useCurrentAccount()
 
-  useEffect(() => {
-    if (account) {
-      getUserInfo(account.address).then((resData) => {
-        setPoint(resData.point)
-      })
-    }
-  }, [account])
+  // useEffect(() => {
+  //   if (account) {
+  //     getUserInfo(account.address).then((resData) => {
+  //       setPoint(resData.point)
+  //     })
+  //   }
+  // }, [account])
 
   const menuItems = [
     {
@@ -72,7 +72,7 @@ export function Header() {
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        {account && <NavbarItem>{point}</NavbarItem>}
+        {account && <NavbarItem>Your Point: 0 pts</NavbarItem>}
         <NavbarItem>
           <ConnectButton />
           {/* <Button color="primary">Connect Wallet</Button> */}
