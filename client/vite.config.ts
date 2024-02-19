@@ -6,4 +6,12 @@ import svgr from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
+  server: {
+    proxy: {
+      '/users': {
+        target: 'http://192.168.140.157:3000',
+        changeOrigin: true,
+      },
+    },
+  },
 })

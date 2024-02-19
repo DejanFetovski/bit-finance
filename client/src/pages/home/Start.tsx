@@ -21,7 +21,8 @@ export const Start = () => (
           </p>
         </div>
         <a
-          href="/"
+          href="/dapp"
+          target="_blank"
           className="inline-block min-w-56 rounded-full bg-cyan-400 px-8 py-4 text-center font-bold text-white duration-200 hover:bg-cyan-500"
         >
           Launch App

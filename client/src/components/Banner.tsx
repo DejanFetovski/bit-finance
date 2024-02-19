@@ -10,6 +10,7 @@ export const Banner = ({ url, children }: BannerProps) => (
     <div className="flex justify-center">
       <a
         href={url}
+        target="_blank"
         className="flex items-center gap-x-1 text-sm text-white duration-200 hover:text-blue-200"
       >
         {children}

@@ -12,10 +12,10 @@ import Logo from 'assets/svg/logo-footer.svg?react'
 
 const navigation: NavigationType = {
   links: [
-    { name: 'Docs', url: '' },
-    { name: 'Audit', url: '' },
-    { name: 'Media Kit', url: '' },
-    { name: 'Terms of Use', url: '' },
+    { name: 'Docs', url: '/' },
+    { name: 'Audit', url: '/' },
+    { name: 'Media Kit', url: '/' },
+    { name: 'Terms of Use', url: '/' },
   ],
   socialLinks: SocialUrls,
 }

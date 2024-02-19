@@ -12,9 +12,16 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@mysten/dapp-kit": "^0.12.2",
+    "@mysten/sui.js": "^0.50.1",
+    "@nextui-org/react": "^2.2.9",
+    "@tanstack/react-query": "^5.21.7",
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0"

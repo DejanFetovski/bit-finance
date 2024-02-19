@@ -38,10 +38,11 @@ const navigation: NavigationType = {
 export const Home = () => (
   <>
     <div className="sticky top-0 z-50">
-      <Banner url="/">Get Started With Bit Finance Now</Banner>
+      <Banner url="/dapp">Get Started With Bit Finance Now</Banner>
       <Navbar navigation={navigation}>
         <a
-          href="/"
+          href="/dapp"
+          target="_blank"
           className="inline-block rounded-full bg-cyan-400 px-8 py-4 text-center font-bold text-white duration-200 hover:bg-cyan-500"
         >
           Launch App
