@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/users': {
-        target: 'http://192.168.140.157:3000',
+        target: 'http://localhost:3000',
         changeOrigin: true,
       },
     },
