@@ -21,8 +21,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo, faWallet } from '@fortawesome/free-solid-svg-icons'
 
 /** import constant dashboard data for test */
-import { dashboardData } from 'constants/dashboard.data'
-type Position = (typeof dashboardData.positions)[0]
+import { dashboardData, Position } from 'constants/dashboard.data'
 
 /** table columns */
 const columns = [
